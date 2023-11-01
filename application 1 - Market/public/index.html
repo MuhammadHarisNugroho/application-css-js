@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndoApril | CS666</title>
+    <link rel="stylesheet" href="/application 1 - Market/assets/css/style.css">
+</head>
+<body>
+    <h2 id="title">Muhammad Haris Nugroho | CS666 | IndoApril</h2>
+<main>
+
+  <!-- Form to add new item -->
+  <form id="add-form">
+    <h3>Add New Item</h3>
+    <input id="name-input" type="text" placeholder="Item name" required />
+    <input id="price-input" type="number" placeholder="Price" required />
+    <input id="qty-input" type="number" placeholder="Quantity" required />
+    <button id="submit-btn" type="submit">
+      + Add Item
+    </button>
+  </form>
+
+  <!-- Grocery List -->
+  <div class="list-wrapper">
+    <div id="grocery-list">
+      <div class="header">
+        <span class="title">Item</span>
+        <span class="title">Quantity</span>
+        <span class="title">Unit Price</span>
+        <span class="title">Subtotal</span>
+        <span class="title">🗑</span>
+      </div>
+    </div>
+
+    <!-- Subtotal and Grandtotal Information -->
+    <div class="totals-wrapper">
+      <div class="totals-row">
+        <div class="label">Subtotal:</div>
+        <div id="subtotal"></div>
+      </div>
+      <div class="totals-row">
+        <div class="label">Grand Total:</div>
+        <div id="grandtotal"></div>
+      </div>
+    </div>
+
+  </div>
+  <script src="/application 1 - Market/assets/js/main.js"></script>
+</body>
+</html>
